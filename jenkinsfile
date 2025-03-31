@@ -4,7 +4,7 @@ pipeline {
 
     tools {
         jdk 'Jdk17'
-        nodejs 'node16'
+        nodejs 'node23'
     }
 
     environment {
@@ -40,7 +40,7 @@ pipeline {
 
        stage('Quality Gate Check') {
             steps {
-                waitForQualityGate abortPipeline: false, credentialsId: 'sonar-secret'
+                waitForQualityGate abortPipeline: True, credentialsId: 'sonar-secret'
             }
         }
 
