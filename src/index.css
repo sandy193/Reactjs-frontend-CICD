@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  background-image: url('https://img.freepik.com/premium-photo/illustration-shopping-bag-cart-with-credit-cards-smartphone-shopping-online-concept-3d-rendering_224530-1964.jpg');
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed; 
+}
+
+
