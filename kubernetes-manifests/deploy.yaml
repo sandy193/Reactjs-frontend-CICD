@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: sandydocker19/frontend-app:5
+        image: sandydocker19/frontend-app:10
         ports:
         - containerPort: 80
         env:
