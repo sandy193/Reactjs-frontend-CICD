@@ -64,7 +64,7 @@ function App() {
           <div className="row justify-content-center">
             <div className="col-md-6 col-sm-12 col-12">
               <h1 className="text-center mb-4">User Management</h1>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className="form-floating mb-3">
                                 <input type="text" class="form-control" value={name} onChange={e => setName(e.target.value)} id="floatingInput" placeholder="Enter Name" required />
                                 <label for="floatingInput">Name</label>
@@ -78,8 +78,7 @@ function App() {
                                 <label for="floatingcompletionDate">Amount</label>
                             </div>
                            <div className="form-group mb-3">
-                                <button type="submit" onClick={handleSubmit} className="btn btn-primary">Submit</button>
-
+                                <button type="submit" className="btn btn-primary"> Submit </button>
                             </div>
                         </form>
                     </div>
