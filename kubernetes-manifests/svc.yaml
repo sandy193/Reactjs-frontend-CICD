@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: LoadBalancer  # You can change this to ClusterIP or NodePort as needed
+  type: NodePort  # You can change this to ClusterIP or NodePort as needed
