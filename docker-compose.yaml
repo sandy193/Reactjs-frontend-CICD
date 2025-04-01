@@ -1,1 +1,29 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: sandydocker19/frontend-app:10  
+    build:
+      context: ./Reactjs-frontend-CICD  
+    ports:
+      - "80:80"  
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend:8000  
+    depends_on:
+      - backend  
+
+  backend:
+    image: sandydocker19/backend-app:11  
+    build:
+      context: ./Python-fastapi-backend-CICD  
+    ports:
+      - "8000:8000" 
+    environment:
+      - DATABASE_URL=sqlite:///./test.db  
+    
+
+networks:
+  app-network:
+    driver: bridge  
+
 
