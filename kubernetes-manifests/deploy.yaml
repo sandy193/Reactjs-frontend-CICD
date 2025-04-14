@@ -17,6 +17,7 @@ spec:
       containers:
       - name: frontend
         image: sandydocker19/frontend-app:10
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
         env:
